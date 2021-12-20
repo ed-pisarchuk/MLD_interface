@@ -2,12 +2,48 @@
 
 
 {% block title %}
-    Классификация МО
+Классификация МО
 {% endblock %}
 
 {% block content %}
-    <div class="text-primary">
-        <img src="{{ url_for('static', filename='images/' + img_name) }}" alt="">
-        <p style="font-size: 22px">Микроорганизм принадлежит к классу: <i>{{ classname }}</i></p>
+<div class="container" id="testTTT">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-primary">Вы загрузили</div>
+                <img src="{{ url_for('static', filename='images/user_images/' + user_img) }}" alt="" class="card-img">
+                <div class="d-flex flex-row" style="padding: 5px; align-items: center">
+                    <form action="/process" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="image" class="btn-sm btn-outline-info" style="width: 280px">
+                        <button type="submit" class="btn-sm float-right btn-danger">
+                            Исследовать
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="row">
+                {% for prediction in predictions %}
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">{{prediction.name}}
+                            <div class="progress">
+                                    <div class="progress-bar bg-success"
+                                         style="width: {{prediction.percent + '%'}}">
+                                        <i style="color: #39484e">совпадение {{prediction.percent}}%</i>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='images/mo_classes/' + prediction.image) }}" alt=""
+                             class="card-img" style="height: 160px; object-fit: cover;">
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-{% endblock %} 
+</div>
+{% endblock %}

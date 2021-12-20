@@ -15,10 +15,10 @@ def index():
 @app.route('/process', methods=['POST'])
 def process():
     imagefile = request.files.get('image')
-    full_name = os.path.join(os.getcwd(), 'files', imagefile.filename)
+    full_name = os.path.join(os.getcwd(), 'static/images/user_images', imagefile.filename)
     imagefile.save(full_name)
-    [classname, img_name] = process_image(full_name)
-    return render_template('answer.html', classname=classname, img_name='/mo_classes/' + img_name)
+    [current_img, predictions_cards] = process_image(full_name)
+    return render_template('answer.html', user_img=current_img, predictions=predictions_cards)
 
 if __name__ == "__main__":
     app.run(debug=True)
