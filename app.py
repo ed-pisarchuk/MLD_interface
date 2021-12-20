@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from mo_data import mo_data_by_classes, fields_decoding
 
 import os
 from model import process_image
@@ -10,6 +11,11 @@ app = Flask(__name__)
 @app.route('/home')
 def index():
     return render_template("index.html")
+
+
+@app.route('/catalog')
+def catalog():
+    return render_template("catalog.html", catalog_data=mo_data_by_classes, fields=fields_decoding)
 
 
 @app.route('/process', methods=['POST'])

@@ -1,22 +1,64 @@
 mo_data_by_classes = [
     {
         "name": 'Toxoplasma gondii',
-        "image": '61.Fungal_and_Parasitic_Diseases_of_the_Nervous_System_–_Microbiology.png'
+        "image": '61.Fungal_and_Parasitic_Diseases_of_the_Nervous_System_–_Microbiology.png',
+        "description": "Токсоплазмоз – протозойное заболевание, вызываемое простейшими Toxoplasma gondii. Входит в группу инфекций TORCH-комплекса, включающих краснуху, ЦМВИ, а также патологию, вызываемую вирусом герпеса 1 и 2 типа. TORCH - инфекции представляют серьезную угрозу для здоровья ребенка, плода, пациентов с иммунодефицитом. Жизненный цикл паразита проходит с участием окончательных (представители семейства кошачьих) и промежуточных хозяев, к которым относятся многие виды животных, употребляемых в пищу (птица, крупный рогатый скот и др.).",
+        "fields": {
+            "domain": "Эукариоты - Eukaryota",
+            "kingdom": "Протисты",
+            "kind": "Апикомплексы - Apicomplexa",
+            "family": "Sarcocystidae"
+        }
     },
     {
         "name": 'Botrytis cinerea',
-        "image": '52.Botrytis_–_Wikipedia.png'
+        "image": '52.Botrytis_–_Wikipedia.png',
+        "description": "Botrytis cinerea – возбудитель серой гнили, паразитирует более чем на 200 видах растений, относящихся к 45 семействам. Вредоносный паразитический микромицет, способный при недостаточности мер борьбы нанести катастрофический ущерб урожайности культурных растений и уничтожить заложенные на хранение плоды, ягоды, корнеплоды.",
+        "fields": {
+            "domain": "Эукариоты - Eukaryota",
+            "kingdom": "Грибы - Fungi",
+            "kind": "Анаморфные (Несовершенные грибы) - Anamorphic fungi",
+            "family": "Botrytis"
+        }
     },
     {
-        "name": 'Penicillium hyphae',
-        "image": '36.Short_Note_on_Penicillium_QS_Study.png'
+        "name": 'Penicillium species',
+        "image": '36.Short_Note_on_Penicillium_QS_Study.png',
+        "description": "Penicillium – группа многоклеточных грибов. Характеризуется экологической пластичностью и большой устойчивостью к воздействию неблагоприятных условий окружающей среды. Многие виды используются для производства пищевых продуктов и лекарств.",
+        "fields": {
+            "domain": "Эукариоты - Eukaryota",
+            "kingdom": "Грибы - Fungi",
+            "kind": "Аскомицеты - Ascomycota",
+            "family": "Аспергилласе - Aspergillaceae"
+        }
     },
     {
         "name": 'Fusarium alchetron',
-        "image": '30.Basics_of_Fungal_Keratitis_Contact_Lenses_CDC.png'
+        "image": '30.Basics_of_Fungal_Keratitis_Contact_Lenses_CDC.png',
+        "description": "Fusarium в природе представлен обширной биологически неоднородной группой грибов. В их числе паразиты, полупаразиты и сапрофиты растений. Известны виды, паразитирующие на насекомых, вызывающие токсикозы и микозы теплокровных животных и человека. Большинство видов – фитотрофы. Болезни растений, вызываемые грибами этого рода, называют фузариозами.",
+        "fields": {
+            "domain": "Домен",
+            "kingdom": "Царство",
+            "kind": "Тип",
+            "family": "Семейство"
+        }
     },
     {
-        "name": 'Mucor sp',
-        "image": '95.Absidia_Alchetron_The_Free_Social_Encyclopedia.png'
+        "name": 'Mucor species',
+        "image": '95.Absidia_Alchetron_The_Free_Social_Encyclopedia.png',
+        "description": "Mucor относится к плесневым грибам. Их отличительной особенностью является отсутствие крупных плодовых тел, характерных для шляпочных грибов. Плесневые грибы обычно поселяются на органических субстратах (пищевых продуктах, древесине) и питаются за их счет, разлагая органику. При этом они могут вырабатывать различные вещества как полезные, так и опасные для человека.",
+        "fields": {
+            "domain": "Эукариоты - Eukaryota",
+            "kingdom": "Грибы - Fungi",
+            "kind": "Зигомикота - Zygomycota",
+            "family": "Мукоровые - Mucoraceae"
+        }
     }
 ]
+
+fields_decoding = {
+    "domain": "Домен",
+    "kingdom": "Царство",
+    "kind": "Тип",
+    "family": "Семейство"
+}

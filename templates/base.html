@@ -56,7 +56,7 @@
                         <a class="nav-link" href="/home">Анализ<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Справочник МО</a>
+                        <a class="nav-link" href="/catalog">Справочник МО</a>
                     </li>
                 </ul>
             </div>
@@ -70,8 +70,7 @@
                       <div class="main-banner">
                           <div class="text-center">
                               <div class="banner-title">
-                                  <h3 class="font-weight-medium text-warning">Классификатор микроскопических
-                                      изображений</h3>
+                                  <h3 class="font-weight-medium text-warning">{% block navigation_name %}{% endblock %}</h3>
                               </div>
 
                               <div id="content">
@@ -87,7 +86,7 @@
 
   <footer class="footer_section">
     <p>
-      &copy; <span id="displayYear"></span> All Rights Reserved 
+      &copy; <span id="displayYear"></span>Pisarchuk E.D.
     </p>
   </footer>
   <!-- jQery -->

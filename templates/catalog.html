@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+Анализ
+{% endblock %}
+{% block navigation_name %}
+Справочник микроорганизмов
+{% endblock %}
+
+
+{% block content %}
+<div class="d-flex">
+    {% for item in catalog_data %}
+    <div class="card" style="margin-bottom: 30px">
+        <div class="card-header text-uppercase"> {{item.name}}</div>
+        <div class="card-body">
+            <img src="{{ url_for('static', filename='images/mo_classes/' + item.image) }}" alt=""
+                 class="card-img" style="height: 320px; width: 320px" align="left">
+            <div class="container" style="padding: 0 20px">
+                {% for field in fields.keys() %}
+
+                <dl class="row text-left">
+                    <dt class="col-sm-3">
+                        {{fields[field]}}
+                    </dt>
+                    <dd class="col-sm-9">
+                        {{item['fields'][field]}}
+                    </dd>
+                </dl>
+
+                {% endfor %}
+                <dl class="row text-justify">
+                    <dd class="col">{{item['description']}}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+</div>
+
+{% endblock %}
