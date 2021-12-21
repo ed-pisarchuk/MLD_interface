@@ -5,8 +5,7 @@
 3. Запустить проект командой python app.py
 4. Перейти в браузере по адресу http://127.0.0.1:5000/ 
 5. Загрузить любое изображение из папки /static/images/user_images в форму и нажать кнопку "Провести анализ"
-![image](https://user-images.githubusercontent.com/70141111/146902755-7d2e724f-e2a7-47c9-bd57-bec415f029d7.png)
+![image](https://user-images.githubusercontent.com/70141111/146968858-9ebdd6aa-f3df-4963-927b-2f2003be2136.png)
 6. Далее произойдет переход на страницу с результатами, где есть возможность загрузить другое изображение для классификации
-![image](https://user-images.githubusercontent.com/70141111/146902806-349b24ed-f887-46da-88d9-a80b4655f733.png)
-
+![image](https://user-images.githubusercontent.com/70141111/146968819-50240ed6-c568-42ac-9092-e2d748e02810.png)
 
