@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container" id="testTTT">
+<div class="container">
     <div class="row">
         <div class="col">
             <div class="card">
@@ -18,11 +18,10 @@
                 <img src="{{ url_for('static', filename='images/user_images/' + user_img) }}" alt="" class="card-img">
 
                 <form action="/process" method="POST" enctype="multipart/form-data">
-                    <div class="input-group mb-3 " style="margin: 10px 5px; width: 98%">
-                        <input class="form-control text-dark" name="image" type="file" id="formFile" required
-                               >
-                        <button type="submit" class="btn float-right btn-primary"
-                                style="margin-left: 5px; margin-right: 0">
+                    <div class="input-group mb-3 " style="padding: 0 16px; margin-top: 16px">
+                        <input class="form-control form-control-sm text-dark" name="image" type="file" id="formFile" required>
+                        <button type="submit" class="btn-sm float-right btn-primary"
+                                style="margin-left: 20px; margin-right: 0">
                             Исследовать
                         </button>
                     </div>
