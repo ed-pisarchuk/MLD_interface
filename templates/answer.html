@@ -17,14 +17,16 @@
                 <div class="card-header text-primary">Вы загрузили</div>
                 <img src="{{ url_for('static', filename='images/user_images/' + user_img) }}" alt="" class="card-img">
 
-                    <form action="/process" method="POST" enctype="multipart/form-data">
-                        <div class="input-group mb-3 " style="margin: 10px">
-                        <input type="file" name="image" class="btn btn-outline-primary" style="width: 280px; margin-right: 20px">
-                        <button type="submit" class="btn float-right btn-danger">
+                <form action="/process" method="POST" enctype="multipart/form-data">
+                    <div class="input-group mb-3 " style="margin: 10px 5px; width: 98%">
+                        <input class="form-control text-dark" name="image" type="file" id="formFile" required
+                               >
+                        <button type="submit" class="btn float-right btn-primary"
+                                style="margin-left: 5px; margin-right: 0">
                             Исследовать
                         </button>
-                            </div>
-                    </form>
+                    </div>
+                </form>
 
             </div>
         </div>
