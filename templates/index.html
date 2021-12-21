@@ -8,19 +8,16 @@
 
 
 {% block content %}
-    <div class="container">
-        <p class="mt-3 text-warning">Помести образец под микроскоп и сделай фото</p>
-        <img src="{{ url_for('static', filename='images/microscope.png') }}"
-             style="height: 320px; width: 320px">
-        <form action="/process" method="POST" enctype="multipart/form-data">
-            <div class="container">
-                <div class="input-group mb-3 justify-content-center">
-                    <input type="file" name="image" class="btn btn-outline-primary" style="margin-right: 20px">
-                    <button type="submit" class="btn float-right btn-danger">Провести анализ</button>
-                </div>
-
-            </div>
-        </form>
-    </div>
+<div class="container ">
+    <p class="mt-3 text-warning">Помести образец под микроскоп и сделай фото</p>
+    <img src="{{ url_for('static', filename='images/microscope.png') }}"
+         style="height: 320px; width: 320px">
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <div class="input-group mb-3" style="margin: 0 25%; width: 50%">
+            <input class="form-control text-dark" name="image" type="file" id="formFile" required>
+            <button type="submit" class="btn btn-primary">Провести анализ</button>
+        </div>
+    </form>
+</div>
 
 {% endblock %}

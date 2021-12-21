@@ -166,7 +166,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #4f5f67;
+  color: #39484e;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -175,7 +175,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #bf0d67;
+  color: #007bff;
 }
 
 .custom_nav-container .nav_search-btn {
